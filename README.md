@@ -101,6 +101,10 @@ String encrypted = enigmaMachine.translate("SECRETMESSAGE");
 - Enigma T "Tirpitz" (Japanese Enigma)
 - Enigma B - Mark II, Wiring of the A-133
 - Enigma Z
+- Spanish Enigma, wiring D
+- Spanish Enigma, wiring F
+- Spanish Enigma, Zagreb Delta machine A 16081
+- Spanish Enigma, Sonderschaltung / Zagreb Delta machine A 16101
 
 
 ## License

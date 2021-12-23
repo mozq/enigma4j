@@ -36,6 +36,10 @@ import net.mozq.enigma4j.machine.model.EnigmaM4;
 import net.mozq.enigma4j.machine.model.EnigmaNorway;
 import net.mozq.enigma4j.machine.model.EnigmaRailway;
 import net.mozq.enigma4j.machine.model.EnigmaSonder;
+import net.mozq.enigma4j.machine.model.EnigmaSpanish_D;
+import net.mozq.enigma4j.machine.model.EnigmaSpanish_Delta;
+import net.mozq.enigma4j.machine.model.EnigmaSpanish_F;
+import net.mozq.enigma4j.machine.model.EnigmaSpanish_S;
 import net.mozq.enigma4j.machine.model.EnigmaSwiss_K;
 import net.mozq.enigma4j.machine.model.EnigmaT;
 import net.mozq.enigma4j.machine.model.EnigmaZ;
@@ -180,6 +184,39 @@ public class Enigma {
 		private Z() { }
 	}
 	
+	/**
+	 * Spanish Enigma, wiring D
+	 * A 1216, A 1236, A 1237, A 1238, A 1239, A 1250, A 1251, A 1252
+	 */
+	public static class Spanish_D extends EnigmaSpanish_D {
+		private Spanish_D() { }
+	}
+	
+	/**
+	 * Spanish Enigma, wiring F
+	 * A 1241, A 1242, K 201, K 202
+	 */
+	public static class Spanish_F extends EnigmaSpanish_F {
+		private Spanish_F() { }
+	}
+	
+	/**
+	 * Spanish Enigma, Zagreb Delta machine A 16081.
+	 * A 16081
+	 */
+	public static class Spanish_Delta extends EnigmaSpanish_Delta {
+		private Spanish_Delta() { }
+	}
+	
+	/**
+	 * Spanish Enigma, Sonderschaltung / Zagreb Delta machine A 16101.
+	 * A 17314S, A 17315S and A 17316S
+	 * A 16101
+	 */
+	public static class Spanish_S extends EnigmaSpanish_S {
+		private Spanish_S() { }
+	}
+	
 	/** Enigma machine specifications */
 	private static final List<EnigmaMachineSpec> MACHINE_SPECS = List.of(
 			A_133.spec(),
@@ -198,7 +235,11 @@ public class Enigma {
 			KD.spec(),
 			Railway.spec(),
 			T.spec(),
-			Z.spec()
+			Z.spec(),
+			Spanish_D.spec(),
+			Spanish_F.spec(),
+			Spanish_Delta.spec(),
+			Spanish_S.spec()
 	);
 	
 	/** Enigma machine names */
